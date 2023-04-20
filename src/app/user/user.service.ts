@@ -15,6 +15,7 @@ export class UserService {
   }
 
   findAll() {
+    console.log(this.users)
     return this.users;
   }
 }

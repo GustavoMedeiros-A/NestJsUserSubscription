@@ -4,6 +4,7 @@ import { UserService } from './user.service';
 
 @Module({
   controllers: [UserController],
-  providers: [UserService],
+  providers: [UserService], // new UserService().users = [{ "name": mario, notified: false}]
+  exports: [UserService] // Export to the notification.module
 })
 export class UserModule {}
