@@ -12,12 +12,12 @@ export class NotificationController {
   //   return this.notificationService.notifyUser();
   // }
 
-  @Post()
-  notifyUser() {
-    const users = this.userService.findNotificationEnabled();
+  // @Post()
+  // notifyUser() {
+  //   const users = this.userService.findNotificationEnabled();
 
-    for (const user of users) {
-      console.log(`Hey ${user.name}, new content has been uploaded`)
-    }
-  }
+  //   for (const user of users) {
+  //     console.log(`Hey ${user.name}, new content has been uploaded`)
+  //   }
+  // }
 }
